@@ -5,7 +5,7 @@
   <summary><h2 style="display: inline-block">Inhaltsverzeichnis</h2></summary>
   <ol>
     <li>
-      <a href="#über-das-projekt">Über das Projekt</a>
+      <a href="#beschreibung-des-projekts">Beschreibung des Projekts</a>
     </li>
     <li>
       <a href="#initialisierung-der-matrix">Initialisierung der Matrix</a>
@@ -14,7 +14,7 @@
       <a href="#allgemeine-beschreibung-des-algorithmus">Allgemeine Beschreibung des Algorithmus</a>
     </li>
     <li>
-      <a href="#genauere-beschreibung">Genauere Beschreibung</a>
+      <a href="#genauere-beschreibung-des-algorithmus">Genauere Beschreibung des Algorithmus</a>
     </li>
     <li>
       <a href="#Error">Error</a>
@@ -25,7 +25,7 @@
   </ol>
 </details>
 
-### Über das Projekt
+### Beschreibung des Projekts
 Algorithmus um alle Lösungswege des Brettspielsspiels "Solitär" (Peg solitaire) zu finden.
 
 [Wikipedia Artikel: Solitär](https://de.wikipedia.org/wiki/Solit%C3%A4r_(Brettspiel))
@@ -50,7 +50,7 @@ ausgeführte Zug stellt dabei einen Knoten dar.
       - Wenn nein, wird der aktuelle Zug rückgängig gemacht.
       - Wenn ja, dann wird der nächstmögliche Zug ausgeführt.
 
-### Genauere Beschreibung
+### Genauere Beschreibung des Algorithmus
 **3 eigene Typen:**
 
 - moveCoordinates: 
