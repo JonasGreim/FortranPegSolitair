@@ -5,7 +5,10 @@
   <summary><h2 style="display: inline-block">Inhaltsverzeichnis</h2></summary>
   <ol>
     <li>
-      <a href="#initialisierung-der-matrix ">Initialisierung der Matrix</a>
+      <a href="#über-das-projekt">Über das Projekt</a>
+    </li>
+    <li>
+      <a href="#initialisierung-der-matrix">Initialisierung der Matrix</a>
     </li>
     <li>
       <a href="#allgemeine-beschreibung-des-algorithmus">Allgemeine Beschreibung des Algorithmus</a>
@@ -22,7 +25,7 @@
   </ol>
 </details>
 
-### Übersicht
+### Über das Projekt
 Algorithmus um alle Lösungswege des Brettspielsspiels "Solitär" (Peg solitaire) zu finden.
 
 [Wikipedia Artikel: Solitär](https://de.wikipedia.org/wiki/Solit%C3%A4r_(Brettspiel))
