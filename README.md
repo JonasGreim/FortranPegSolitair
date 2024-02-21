@@ -1,14 +1,41 @@
 # **not working currently **
 
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Inhaltsverzeichnis</h2></summary>
+  <ol>
+    <li>
+      <a href="#initialisierung-der-matrix ">Initialisierung der Matrix</a>
+    </li>
+    <li>
+      <a href="#allgemeine-beschreibung-des-algorithmus">Allgemeine Beschreibung des Algorithmus</a>
+    </li>
+    <li>
+      <a href="#genauere-beschreibung">Genauere Beschreibung</a>
+    </li>
+    <li>
+      <a href="#Error">Error</a>
+    </li>
+        <li>
+      <a href="#konsolenausgabe">Konsolenausgabe</a>
+    </li>
+  </ol>
+</details>
 
-### **Initialisierung der Matrix:** 
+### Übersicht
+Algorithmus um alle Lösungswege des Brettspielsspiels "Solitär" (Peg solitaire) zu finden.
+
+[Wikipedia Artikel: Solitär](https://de.wikipedia.org/wiki/Solit%C3%A4r_(Brettspiel))
+
+
+### Initialisierung der Matrix 
 Die Matrix wird durch eine “.txt” Datei eingelesen. Es ist auch möglich andere Positionen oder
 andere Solitär-Spielbretter als Initialmatrix zu verwenden. (mit Anpasssung des Figurenzählers)
 
 ![matrixDescription](./images/matrixWithLegend.png)
 
 
-**Allgemeine Beschreibung des Algorithmus:** \
+### Allgemeine Beschreibung des Algorithmus
 Um die Lösung zu finden, wurde eine rekusive Tiefensuche implementiert. Die Baumstruktur wird
 hierbei, aber durch verkettete Listen mit dem “FIFO(First In First Out) Prinzip” dargestellt. Jeder
 ausgeführte Zug stellt dabei einen Knoten dar.
@@ -20,7 +47,7 @@ ausgeführte Zug stellt dabei einen Knoten dar.
       - Wenn nein, wird der aktuelle Zug rückgängig gemacht.
       - Wenn ja, dann wird der nächstmögliche Zug ausgeführt.
 
-### **Genauere Beschreibung:** 
+### Genauere Beschreibung
 **3 eigene Typen:**
 
 - moveCoordinates: 
@@ -62,7 +89,7 @@ Stein in der Mitte also Position (4,4) liegt, gilt das Spiel als gewonnen. Es wi
 in “nodeExecutedMoves” der aktuelle Zug ausgegeben, was den Gewinn-Zug-Pfad widerspiegelt.
 
 
-### **Fehler/Error** 
+### Error
 Der beschriebener Brute Force Algorithmus funktioniert mit Postionen mit weniger Figuren, aber
 leider nicht mit allen 32. Da dieser eine zu lange Laufzeit hat. In der Abgabe kann das Programm
 ausgeführt werden und gibt den Lösungspfad aus, aber läuft nur mit der Matrix ‘testSoli.txt’mit
@@ -82,7 +109,7 @@ Zähler der Spielsteine an irgendeinen Zeitpunkt um 1 erhöht. Der Optimierungsc
 Suchalgorithmus auskommentiert.
 
 
-### **Konsolenausgabe bei Ausführung des Programmes**
+### Konsolenausgabe
 
 **Legende Ausgabe: Aufbau ‘solution path’:**\
 [[(Startkoordinate)(Sprung-)(End-)],…]
