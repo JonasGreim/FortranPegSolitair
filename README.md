@@ -1,7 +1,7 @@
 # **not working currently **
 
 
-### **Initialisierung der Matrix:** \
+### **Initialisierung der Matrix:** 
 Die Matrix wird durch eine “.txt” Datei eingelesen. Es ist auch möglich andere Positionen oder
 andere Solitär-Spielbretter als Initialmatrix zu verwenden. (mit Anpasssung des Figurenzählers)
 
@@ -20,7 +20,7 @@ ausgeführte Zug stellt dabei einen Knoten dar.
       - Wenn nein, wird der aktuelle Zug rückgängig gemacht.
       - Wenn ja, dann wird der nächstmögliche Zug ausgeführt.
 
-### **Genauere Beschreibung:** \
+### **Genauere Beschreibung:** 
 **3 eigene Typen:**
 
 - moveCoordinates: 
@@ -62,7 +62,7 @@ Stein in der Mitte also Position (4,4) liegt, gilt das Spiel als gewonnen. Es wi
 in “nodeExecutedMoves” der aktuelle Zug ausgegeben, was den Gewinn-Zug-Pfad widerspiegelt.
 
 
-### **Fehler/Error** \
+### **Fehler/Error** 
 Der beschriebener Brute Force Algorithmus funktioniert mit Postionen mit weniger Figuren, aber
 leider nicht mit allen 32. Da dieser eine zu lange Laufzeit hat. In der Abgabe kann das Programm
 ausgeführt werden und gibt den Lösungspfad aus, aber läuft nur mit der Matrix ‘testSoli.txt’mit
@@ -84,10 +84,10 @@ Suchalgorithmus auskommentiert.
 
 ### **Konsolenausgabe bei Ausführung des Programmes**
 
-Legende Ausgabe: Aufbau ‘solution path’:\
+**Legende Ausgabe: Aufbau ‘solution path’:**\
 [[(Startkoordinate)(Sprung-)(End-)],…]
 
-Example solution path:\
+**Example solution path:**\
 [(4,2), (4,3), (4,4)], [(4,5), (4,4), (4,3)], [(2,5), (3,5), (4,5)], [(2,3), (2,4), (2,5)],
 [(6,4), (5,4), (4,4)], [(5,6), (5,5), (5,4)], [(5,3), (5,4), (5,5)], [(3,4), (4,4), (5,4)],
 [(5,4), (5,5), (5,6)], [(4,3), (3,3), (2,3)]
